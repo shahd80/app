@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Portfolio.css";
+import port1 from "../../assets/poert1.png";
+import port2 from "../../assets/port2.png";
+import port3 from "../../assets/port3.png";
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -25,13 +28,10 @@ export default function Portfolio() {
 
         <div className="row g-5 pb-5">
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/poert1.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port1)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/poert1.png"
+                src={port1}
                 alt="portfolio item 1"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -41,13 +41,10 @@ export default function Portfolio() {
           </div>
 
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/port2.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port2)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/port2.png"
+                src={port2}
                 alt="portfolio item 2"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -57,13 +54,10 @@ export default function Portfolio() {
           </div>
 
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/port3.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port3)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/port3.png"
+                src={port3}
                 alt="portfolio item 3"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -73,13 +67,10 @@ export default function Portfolio() {
           </div>
 
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/poert1.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port1)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/poert1.png"
+                src={port1}
                 alt="portfolio item 1"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -89,13 +80,10 @@ export default function Portfolio() {
           </div>
 
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/port2.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port2)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/port2.png"
+                src={port2}
                 alt="portfolio item 2"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -105,13 +93,10 @@ export default function Portfolio() {
           </div>
 
           <div className="col-4">
-            <div
-              className="inner"
-              onClick={() => handleImageClick("src/assets/port3.png")}
-            >
+            <div className="inner" onClick={() => handleImageClick(port3)}>
               <img
                 className="w-100 rounded-3"
-                src="src/assets/port3.png"
+                src={port3}
                 alt="portfolio item 3"
               />
               <div className="layer w-100 h-100 position-absolute top-0 start-0 rounded-3 d-flex justify-content-center align-items-center">
@@ -127,7 +112,7 @@ export default function Portfolio() {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={closeModal}>
-              <i className="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-times"></i>
             </button>
             <img
               src={selectedImage}
