@@ -1,0 +1,63 @@
+.portfolio {
+  min-height: 80vh;
+}
+
+.inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  background-color: #1abc9ce6;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s opacity;
+}
+
+.inner:hover .layer {
+  opacity: 1;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 104, 189, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 50%;
+  max-height: 50%;
+  cursor: default;
+}
+
+.modal-image {
+  width: 70%;
+  object-fit: contain;
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #1abc9c;
+}
